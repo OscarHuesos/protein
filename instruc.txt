@@ -1,0 +1,10 @@
+put the.pdb file to be processed at bin folder
+
+run on the path with this folder wit:
+cmake .
+make
+
+go to bin and run ./protein
+
+
+
