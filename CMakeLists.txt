@@ -14,7 +14,7 @@ option(USE_CUDA "Use CUDA" ON)
 file(GLOB cpu_source_files "${CMAKE_SOURCE_DIR}/src/*.cc")
 file(GLOB gpu_source_files "${CMAKE_SOURCE_DIR}/src/*.cu")
 file(GLOB pdb_files "${CMAKE_SOURCE_DIR}/bin/pdbs/*.pdb")
-file(GLOB txt_files "${CMAKE_SOURCE_DIR}/pdbs/*.txt")
+#file(GLOB txt_files "${CMAKE_SOURCE_DIR}/pdbs/*.txt")
 
 #file(GLOB cpu_source_files "${CMAKE_SOURCE_DIR}/pdbs/*.pdb")
 #file(COPY ${CMAKE_SOURCE_DIR}/pdbs
