@@ -43,8 +43,6 @@ def tsvwn(molecula):
     print "Hartees"
     print solver.energy
     tup=(molecula.name,solver.energy)
-#    energias.append(solver.energy)
-#    names.append(mol[n].name)
     return tup
 
 def tiempores(molecula):
@@ -64,18 +62,18 @@ def mediador():
     f = open('energies_1es7list.txt','w+')
     r=len(mol)
     d=0
-    print "cuantas moleculas"
+    print "Number of molecules"
     print r
     l=21
     scalar=0
     dif=(l-d)
-    print "dif"
+    print "diferential"
     print dif
-    print "inicio"
+    print "starting"
     print d
     print "final"
     print l
-    print "cuantos cores"
+    print "Number of cores"
     print multiprocessing.cpu_count()
     max=dif // multiprocessing.cpu_count()
     print "el max"
@@ -83,7 +81,7 @@ def mediador():
     tem=0
     for i in range(d,l,multiprocessing.cpu_count()):
         con=con+1
-        print "el contador va en"
+        print "the counter is"
         print con
         if (con <= max):
             aa=mol[i]
@@ -112,7 +110,7 @@ if __name__ == '__main__':
     scalar=mediador()
     time2 = time.time()
     tiempo_total= round( (time2-time1)*1000.0, 3)
-    print "tiempo escalar"
+    print "escalar time"
     print scalar
-    print "tiempo paralelo"
+    print "parallel time"
     print tiempo_total
