@@ -27,7 +27,7 @@ Proteina g;
 float punta=1.4;
 int puntos=1000;
 float suma=0;
-char r[]="1dqxFH.pdb";
+char r[]="1es7FH.pdb";
 g.leer(r);
 printf("sali lectura \n");
 g.scores(r);
