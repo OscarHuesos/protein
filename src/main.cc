@@ -59,16 +59,16 @@ contactos=g.residuos_en_proteina[w].contactos1;
 prev=g.residuos_en_proteina[w].prevalencia;
 consv=g.residuos_en_proteina[w].conservation_score;
 bfac=g.residuos_en_proteina[w].b_factor;
-energies=g.residuos_en_proteina[w].energias_dft;
-a=g.residuos_en_proteina[w].atomos_en_residuo[0].x;
-b=g.residuos_en_proteina[w].atomos_en_residuo[0].y;
-c=g.residuos_en_proteina[w].atomos_en_residuo[0].z;
-id=g.residuos_en_proteina[w].atomos_en_residuo[0].Id;
-bf=g.residuos_en_proteina[w].atomos_en_residuo[0].b;
 interface=g.residuos_en_proteina[w].interfaz;
+//energies=g.residuos_en_proteina[w].energias_dft;
+//a=g.residuos_en_proteina[w].atomos_en_residuo[0].x;
+//b=g.residuos_en_proteina[w].atomos_en_residuo[0].y;
+//c=g.residuos_en_proteina[w].atomos_en_residuo[0].z;
+//id=g.residuos_en_proteina[w].atomos_en_residuo[0].Id;
+//bf=g.residuos_en_proteina[w].atomos_en_residuo[0].b;
 
 outfile <<"["<<cc<<g.residuos_en_proteina[w].Nombre_cad<<cc<<","<<cc<<g.residuos_en_proteina[w].Nombre_res<<cc<<","<<aidi<<","<<bfac<<","<<area<<","<<hidro<<","<<prev<<","<<consv<<","<<energies<<","<<interface<<",0],"<<endl;
-printf("Chain %s Residue %s id %d  b factor %.3f area %.3f hidrof. %.2f,atomic contacts %d prevalence %.2f score conserv. %.3f ground-state energies %.3f if belong to interface %d \n",g.residuos_en_proteina[w].Nombre_cad,g.residuos_en_proteina[w].Nombre_res,aidi ,bfac,area ,hidro,contactos,prev,consv,energies,interface );
+//printf("Chain %s Residue %s id %d  b factor %.3f area %.3f hidrof. %.2f,atomic contacts %d prevalence %.2f score conserv. %.3f ground-state energies %.3f if belong to interface %d \n",g.residuos_en_proteina[w].Nombre_cad,g.residuos_en_proteina[w].Nombre_res,aidi ,bfac,area ,hidro,contactos,prev,consv,energies,interface );
 //printf("Coordenadas de su atomo 1 x %.3f y %.3f z %.3f , tipo %s,id %d,factorb %.3f, elemento %s \n",a,b,c,g.residuos_en_proteina[w].atomos_en_residuo[0].Tipo,id,bf,g.residuos_en_proteina[w].atomos_en_residuo[0].Clase_atomo);
 }
 
